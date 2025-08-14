@@ -1,0 +1,6 @@
+dash
+plotly
+pandas
+biopython
+requests
+dash-bootstrap-components
