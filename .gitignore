@@ -1,23 +1,17 @@
-#secrets
 .env
-#large data
 data/blast_output.txt
-data/*.fasta
-#local BLAST databases and chunks
+data/*fasta
 localdb/
 blast_chunks/
-#run oututs 
 results/*
 !results/README.md
 logs/
-#caches
-_pycache_/
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
-#msic IDE / OS
+*.pyd
 .vscode/
 .idea/
 .DS_Store
-#runtime saves 
 saved_files/
