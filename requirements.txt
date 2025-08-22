@@ -4,3 +4,4 @@ pandas
 biopython
 requests
 dash-bootstrap-components
+Flask
