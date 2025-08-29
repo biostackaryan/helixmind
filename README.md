@@ -5,7 +5,7 @@
 
 ## 📖 Overview  
 
-HelixMind is a research-focused toolkit that consolidates essential bioinformatics applications into a single platform.  
+**HelixMind** is a research-focused toolkit that consolidates essential bioinformatics applications into a single platform.  
 It eliminates the need to switch between multiple online tools by providing:  
 
 - 🧬 Sequence analysis  
@@ -81,13 +81,23 @@ Planned features:
 
 ---
 
-## 🤝 Contributing  
+## ⚙️ Requirements  
 
-Contributions are welcome!  
+HelixMind depends on standard Python packages (see `requirements.txt`).  
 
-- 🐛 Report bugs via **Issues**  
-- 💡 Suggest features via **Discussions**  
-- 🔧 Submit improvements via **Pull Requests**  
+For **BLAST integration**:  
+- The toolkit supports both **online (NCBI servers)** and **local BLAST+** modes.  
+- To use local BLAST+, you must install the [NCBI BLAST+ executables](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) and add them to your system `PATH`.  
+
+Example check:  
+
+```bash
+blastn -version
+```
+
+If this prints a version number, BLAST+ is correctly installed.
+
+If BLAST+ is not installed, HelixMind will automatically fall back to online mode.
 
 ---
 
